@@ -1,0 +1,18 @@
+.labelPlaceholder {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: rgb(109, 109, 109);
+    text-transform: capitalize; 
+    transition: top .3s;
+    padding: 0;
+  }
+  
+  .inputPlaceholder:focus + .labelPlaceholder,
+  .inputPlaceholder:valid + .labelPlaceholder
+  {
+    top: -10px;
+    background-color: #F7FAFC;
+    z-index: 100;
+    font-size: small;
+  }
